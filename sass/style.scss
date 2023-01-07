@@ -1,0 +1,67 @@
+@use "../sass/header";
+@use "../sass/main_visual";
+@use "../sass/about";
+@use "../sass/works";
+@use "../sass/blog";
+@use "../sass/contact";
+@use "../sass/_footer.scss";
+
+// 共通部分
+// フォントの種類
+// $en-font: "Helvetica Neue","Segoe UI","Arial","Roboto",sans-serif;
+// $jp-font: "Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+
+// 色
+$font-color: #0000;
+$base-color: #FFF;
+$main-color: #FFF;
+$accent-color: #F4F4F4;
+
+// フォントサイズ
+$small-font: 14px;
+$middle-font: 16px;
+$large-font: 18px;
+
+// メディアクエリ
+// $breakpoints: (
+// //キー　　値
+//   'sp': 'screen and (max-width: 767px)', 
+//   //767px以下（スマホ）用の表示
+//   'pc': 'screen and (min-width: 768px)' 
+//   //768px以上（タブレット・PC）用の表示
+// ) !default;
+
+// //メディアクエリ用のmixinを定義。デフォ値はsp
+// @mixin mq($breakpoint: sp) {
+// //map-get(マップ型変数, キー)で値を取得
+//   @media #{map-get($breakpoints, $breakpoint)} {
+//     //この中をカスタムできる
+//     @content;
+//   }
+// }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    // color: $font-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.content-inner {
+    max-width: 1100px;
+}
+

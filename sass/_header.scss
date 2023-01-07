@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.header-inner {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-log {
+    font-size: 24px;
+}
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+}
+
+.header-nav-items {
+    margin-left: auto;
+    display: flex;
+    .header-nav-item {
+        padding-left: 20px;
+        text-align: right;
+        .header-nav-item:nth-child(1) {
+            padding-left: 0;
+        }
+    }
+}
+
+.sns-icon {
+    margin-left: 60px;
+}
+
+
