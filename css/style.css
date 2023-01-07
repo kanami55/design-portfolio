@@ -122,6 +122,46 @@ h4 {
   margin-left: 0;
 }
 
+.blog {
+  margin: 100px 0;
+}
+
+.contact {
+  margin: 100px 0;
+}
+
+.contact-title,
+.contact-subtext {
+  text-align: center;
+}
+
+form {
+  margin-top: 40px;
+}
+form .form-text {
+  width: 100%;
+  margin: 0 auto;
+}
+form label {
+  font-size: 20px;
+}
+form input[type=text],
+form input[type=email],
+form textarea {
+  display: block;
+  width: 80%;
+}
+form input {
+  height: 56px;
+}
+form textarea {
+  height: 210px;
+}
+form .name,
+form .email {
+  margin-bottom: 20px;
+}
+
 .copy-light {
   text-align: center;
   font-size: 12px;
