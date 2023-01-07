@@ -7,21 +7,6 @@
 @use "../sass/_footer.scss";
 
 // 共通部分
-// フォントの種類
-// $en-font: "Helvetica Neue","Segoe UI","Arial","Roboto",sans-serif;
-// $jp-font: "Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
-
-// 色
-$font-color: #0000;
-$base-color: #FFF;
-$main-color: #FFF;
-$accent-color: #F4F4F4;
-
-// フォントサイズ
-$small-font: 14px;
-$middle-font: 16px;
-$large-font: 18px;
-
 // メディアクエリ
 // $breakpoints: (
 // //キー　　値
@@ -49,7 +34,7 @@ $large-font: 18px;
 
 body {
     font-size: 16px;
-    // color: $font-color;
+    font-family: "Helvetica Neue","Segoe UI","Arial","Roboto","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
 }
 
 a {

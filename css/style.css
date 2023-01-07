@@ -49,13 +49,13 @@ header {
   width: 100%;
 }
 .main-visual h2 {
-  font-size: 40px;
+  font-size: 55px;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0;
   padding: 0;
-  transform: translate(-100%, -25%);
+  transform: translate(-150%, -25%);
 }
 
 .about {
@@ -136,11 +136,9 @@ h4 {
 }
 
 form {
-  margin-top: 40px;
-}
-form .form-text {
-  width: 100%;
-  margin: 0 auto;
+  max-width: 960px;
+  width: 70%;
+  margin: 80px auto 0 auto;
 }
 form label {
   font-size: 20px;
@@ -149,22 +147,32 @@ form input[type=text],
 form input[type=email],
 form textarea {
   display: block;
-  width: 80%;
+  width: 100%;
+}
+form ::-moz-placeholder {
+  padding: 10px;
+}
+form :-ms-input-placeholder {
+  padding: 10px;
+}
+form ::placeholder {
+  padding: 10px;
 }
 form input {
   height: 56px;
 }
 form textarea {
-  height: 210px;
+  height: 300px;
 }
 form .name,
 form .email {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .copy-light {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
+  padding: 40px 0;
 }
 
 * {
@@ -175,6 +183,7 @@ form .email {
 
 body {
   font-size: 16px;
+  font-family: "Helvetica Neue", "Segoe UI", "Arial", "Roboto", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 a {
