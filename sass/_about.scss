@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    margin-top: 57px;
+    margin: 100px 0;
 }
 
 .about-left {
@@ -24,11 +24,16 @@ h4 {
     padding-top: 20px;
 }
 
+.skill-details {
+    padding-top: 12px;
+}
+
 .link-items {
     display: flex;
 
     .link-item {
         padding-left: 40px;
+        padding-top: 12px;
     }
     li.link-item:nth-child(1) {
         padding-left: 0; 

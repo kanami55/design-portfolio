@@ -60,7 +60,7 @@ header {
 
 .about {
   display: flex;
-  margin-top: 57px;
+  margin: 100px 0;
 }
 
 .about-left {
@@ -84,14 +84,42 @@ h4 {
   padding-top: 20px;
 }
 
+.skill-details {
+  padding-top: 12px;
+}
+
 .link-items {
   display: flex;
 }
 .link-items .link-item {
   padding-left: 40px;
+  padding-top: 12px;
 }
 .link-items li.link-item:nth-child(1) {
   padding-left: 0;
+}
+
+.works {
+  margin: 100px 0;
+}
+
+.works-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.works-items .works-item {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.works-items .works-item img {
+  width: 350px;
+  height: auto;
+}
+.works-items li.works-item:nth-child(1) {
+  margin-left: 0;
+}
+.works-items li.works-item:nth-child(4) {
+  margin-left: 0;
 }
 
 .copy-light {
@@ -125,4 +153,9 @@ li {
 
 h3 {
   font-size: 48px;
+}
+
+.between-img1 img {
+  width: 100%;
+  height: 380px;
 }/*# sourceMappingURL=style.css.map */
