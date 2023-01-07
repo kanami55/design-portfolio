@@ -1,0 +1,36 @@
+.about {
+    display: flex;
+    margin-top: 57px;
+}
+
+.about-left {
+    width: 50%;
+}
+
+.about-right {
+    width: 50%;
+    text-align: right;
+    img {
+        width: 90%;
+    }
+}
+
+.about-text {
+    padding-top: 20px;
+}
+
+h4 {
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.link-items {
+    display: flex;
+
+    .link-item {
+        padding-left: 40px;
+    }
+    li.link-item:nth-child(1) {
+        padding-left: 0; 
+    }
+}

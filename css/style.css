@@ -58,6 +58,42 @@ header {
   transform: translate(-100%, -25%);
 }
 
+.about {
+  display: flex;
+  margin-top: 57px;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-right {
+  width: 50%;
+  text-align: right;
+}
+.about-right img {
+  width: 90%;
+}
+
+.about-text {
+  padding-top: 20px;
+}
+
+h4 {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+.link-items {
+  display: flex;
+}
+.link-items .link-item {
+  padding-left: 40px;
+}
+.link-items li.link-item:nth-child(1) {
+  padding-left: 0;
+}
+
 .copy-light {
   text-align: center;
   font-size: 12px;
@@ -84,4 +120,9 @@ li {
 
 .content-inner {
   max-width: 1100px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 48px;
 }/*# sourceMappingURL=style.css.map */
