@@ -177,6 +177,16 @@ header {
   margin-left: 60px;
 }
 
+.navbar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: block;
+    margin-left: auto;
+  }
+}
+
 .main-visual {
   position: relative;
   z-index: -1;
@@ -226,13 +236,18 @@ header {
 }
 @media screen and (max-width: 767px) {
   .works-items .works-item {
-    margin-left: 0;
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
+    text-align: center;
   }
 }
 .works-items .works-item img {
   width: 350px;
   height: auto;
+}
+@media screen and (max-width: 767px) {
+  .works-items .works-item img {
+    width: 70%;
+  }
 }
 .works-items li.works-item:nth-child(1) {
   margin-left: 0;

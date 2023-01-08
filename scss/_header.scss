@@ -58,4 +58,12 @@ header {
     margin-left: 60px;
 }
 
+.navbar {
+    display: none;
+    @include m.mq(sp) {
+        display: block;
+        margin-left: auto;
+    }
+}
+
 

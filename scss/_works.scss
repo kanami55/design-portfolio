@@ -18,12 +18,15 @@
         margin-left: 20px;
         margin-top: 80px;
         @include m.mq(sp) {
-            margin-left: 0;
-            margin-top: 60px;
+            margin: 60px auto 0 auto;
+            text-align: center;
         }
         img {
             width: 350px;
             height: auto;
+            @include m.mq(sp) {
+                width: 70%;
+            }
         }
     }
     li.works-item:nth-child(1) {
