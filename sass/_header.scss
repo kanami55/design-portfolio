@@ -7,6 +7,9 @@ header {
     top: 0;
     left: 0;
     flex-direction: column;
+    // @include mq(sp) {
+    //     height: 60px;
+    // }
 }
 
 .header-inner {
@@ -29,7 +32,7 @@ header {
     margin-left: auto;
     display: flex;
     .header-nav-item {
-        padding-left: 40px;
+        padding-left: 60px;
         text-align: right;
         .header-nav-item:nth-child(1) {
             padding-left: 0;

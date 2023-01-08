@@ -1,36 +1,21 @@
 .contact {
-    margin: 100px 0;
+    margin: 200px 0;
 }
 .contact-title,
 .contact-subtext {
     text-align: center;
 }
 
-form {
-    max-width: 960px;
-    width: 70%;
-    margin: 80px auto 0 auto;
-    label {
-        font-size: 20px;
-    }
+.link-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        display: block;
-        width: 100%;
+    .link-item {
+        padding-left: 40px;
+        padding-top: 12px;
     }
-    ::placeholder {
-        padding: 10px;
-    }
-    input {
-        height: 56px;
-    }
-    textarea {
-        height: 300px;
-    }
-    .name,
-    .email {
-        margin-bottom: 40px;
+    li.link-item:nth-child(1) {
+        padding-left: 0; 
     }
 }

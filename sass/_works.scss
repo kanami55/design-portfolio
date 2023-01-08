@@ -1,5 +1,5 @@
 .works {
-    margin: 100px 0;
+    margin: 200px 0;
 }
 
 .works-items {
@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     .works-item {
         margin-left: 20px;
-        margin-top: 40px;
+        margin-top: 80px;
         img {
             width: 350px;
             height: auto;
@@ -19,4 +19,9 @@
     li.works-item:nth-child(4) {
         margin-left: 0;
     }
+}
+
+.daily-ui-title {
+    font-size: 32px;
+    margin-top: 80px;
 }

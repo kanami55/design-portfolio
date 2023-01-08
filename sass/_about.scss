@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    margin: 100px 0;
+    margin: 200px 0;
 }
 
 .about-left {
@@ -19,23 +19,11 @@
     padding-top: 20px;
 }
 
-h4 {
+.about-sub-title {
     font-size: 32px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .skill-details {
     padding-top: 12px;
-}
-
-.link-items {
-    display: flex;
-
-    .link-item {
-        padding-left: 40px;
-        padding-top: 12px;
-    }
-    li.link-item:nth-child(1) {
-        padding-left: 0; 
-    }
 }
