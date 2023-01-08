@@ -1,12 +1,11 @@
-@use "../sass/header";
-@use "../sass/main_visual";
-@use "../sass/about";
-@use "../sass/works";
-@use "../sass/blog";
-@use "../sass/contact";
-@use "../sass/_footer.scss";
-@use "../sass/mixin";
-
+@charset "UTF-8";
+@use "../scss/about";
+@use "../scss/contact";
+@use "../scss/footer";
+@use "../scss/header";
+@use "../scss/main_visual";
+@use "../scss/works";
+@use "../scss/mixin" as m;
 
 
 * {
@@ -18,6 +17,9 @@
 body {
     font-size: 18px;
     font-family: "Helvetica Neue","Segoe UI","Arial","Roboto","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    @include m.mq(sp) {
+        font-size: 16px;
+    }
 }
 
 a {
@@ -33,15 +35,27 @@ li {
 .content-inner {
     max-width: 1100px;
     margin: 0 auto;
+    @include m.mq(sp) {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
 
 h3 {
     font-size: 48px;
+    @include m.mq(sp) {
+        font-size: 32px;
+        text-align: center;
+    }
 }
 
 .between-img1 {
     img {
         width: 100%;
         height: 300px;
+        @include m.mq(sp) {
+            height: 120px;
+        }
     }
 }
+

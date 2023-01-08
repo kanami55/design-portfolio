@@ -1,3 +1,5 @@
+@use "../scss/mixin" as m;
+
 header {
     display: flex;
     align-items: center;
@@ -7,9 +9,9 @@ header {
     top: 0;
     left: 0;
     flex-direction: column;
-    // @include mq(sp) {
-    //     height: 60px;
-    // }
+    @include m.mq(sp) {
+        height: 60px;
+    }
 }
 
 .header-inner {
@@ -17,15 +19,27 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+
+    @include m.mq(sp) {
+        padding: 16px;
+    }
 }
 
 .header-log {
     font-size: 24px;
+
+    @include m.mq(sp) {
+        font-size: 16px;
+    }
 }
 
 .header-right {
     margin-left: auto;
     display: flex;
+
+    @include m.mq(sp) {
+        display: none;
+    }
 }
 
 .header-nav-items {

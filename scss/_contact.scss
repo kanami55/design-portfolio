@@ -1,5 +1,10 @@
+@use "../scss/mixin" as m;
+
 .contact {
     margin: 200px 0;
+    @include m.mq(sp) {
+        margin: 80px 0;
+    }
 }
 .contact-title,
 .contact-subtext {
@@ -10,6 +15,9 @@
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    @include m.mq(sp) {
+        margin: 40px 0;
+    }
 
     .link-item {
         padding-left: 40px;
