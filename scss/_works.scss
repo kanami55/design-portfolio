@@ -2,7 +2,12 @@
 
 .works {
     margin: 200px 0;
-    @include m.mq(sp) {
+
+    @include m.mq(md) {
+        margin: 150px 0;
+    }
+
+    @include m.mq(sm) {
         margin: 80px 0;
     }
 }
@@ -10,21 +15,21 @@
 .works-items {
     display: flex;
     flex-wrap: wrap;
-    @include m.mq(sp) {
+    @include m.mq(sm) {
         display: block;
         flex-wrap: nowrap;
     }
     .works-item {
         margin-left: 20px;
         margin-top: 80px;
-        @include m.mq(sp) {
+        @include m.mq(sm) {
             margin: 60px auto 0 auto;
             text-align: center;
         }
         img {
             width: 350px;
             height: auto;
-            @include m.mq(sp) {
+            @include m.mq(sm) {
                 width: 70%;
             }
         }
@@ -40,4 +45,8 @@
 .daily-ui-title {
     font-size: 32px;
     margin-top: 80px;
+
+    @include m.mq(md) {
+        font-size: 24px;
+    }
 }

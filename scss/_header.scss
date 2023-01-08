@@ -9,7 +9,8 @@ header {
     top: 0;
     left: 0;
     flex-direction: column;
-    @include m.mq(sp) {
+
+    @include m.mq(md) {
         height: 60px;
     }
 }
@@ -20,7 +21,7 @@ header {
     align-items: center;
     width: 100%;
 
-    @include m.mq(sp) {
+    @include m.mq(md) {
         padding: 16px;
     }
 }
@@ -28,7 +29,11 @@ header {
 .header-log {
     font-size: 24px;
 
-    @include m.mq(sp) {
+    @include m.mq(md) {
+        font-size: 18px;
+    }
+
+    @include m.mq(sm) {
         font-size: 16px;
     }
 }
@@ -37,7 +42,7 @@ header {
     margin-left: auto;
     display: flex;
 
-    @include m.mq(sp) {
+    @include m.mq(md) {
         display: none;
     }
 }
@@ -60,7 +65,8 @@ header {
 
 .navbar {
     display: none;
-    @include m.mq(sp) {
+
+    @include m.mq(md) {
         display: block;
         margin-left: auto;
     }
