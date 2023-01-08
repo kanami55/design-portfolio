@@ -2,7 +2,7 @@
 
 .contact {
     margin: 200px 0;
-    @include m.mq(md) {
+    @include m.mq(lg) {
         margin: 150px 0;
     }
     @include m.mq(sm) {
@@ -25,6 +25,7 @@
     .link-item {
         padding-left: 40px;
         padding-top: 12px;
+        font-size: 24px;
     }
     li.link-item:nth-child(1) {
         padding-left: 0; 

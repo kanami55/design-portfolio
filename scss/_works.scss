@@ -3,7 +3,7 @@
 .works {
     margin: 200px 0;
 
-    @include m.mq(md) {
+    @include m.mq(lg) {
         margin: 150px 0;
     }
 
@@ -15,14 +15,16 @@
 .works-items {
     display: flex;
     flex-wrap: wrap;
+
     @include m.mq(sm) {
         display: block;
         flex-wrap: nowrap;
     }
+
     .works-item {
         margin-left: 20px;
         margin-top: 80px;
-        @include m.mq(sm) {
+        @include m.mq(md) {
             margin: 60px auto 0 auto;
             text-align: center;
         }
@@ -30,15 +32,32 @@
             width: 350px;
             height: auto;
             @include m.mq(sm) {
-                width: 70%;
+                width: 90%;
             }
         }
     }
+
     li.works-item:nth-child(1) {
-        margin-left: 0;
+        margin-left: 0px;
     }
+
+    li.works-item:nth-child(3) {
+        @include m.mq(lg) {
+            margin-left: 0px;
+        }
+    }
+
     li.works-item:nth-child(4) {
         margin-left: 0;
+        @include m.mq(lg) {
+            margin-left: 20px;
+        }
+    }
+
+    li.works-item:nth-child(5) {
+        @include m.mq(lg) {
+            margin-left: 0px;
+        }
     }
 }
 
