@@ -26,6 +26,11 @@
         padding-left: 40px;
         padding-top: 12px;
         font-size: 24px;
+
+        @include m.mq(sm) {
+            font-size: 18px;
+            padding-left: 20px;
+        }
     }
 
     .link-item a:hover {

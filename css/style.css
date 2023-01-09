@@ -112,6 +112,12 @@
   padding-top: 12px;
   font-size: 24px;
 }
+@media screen and (max-width: 600px) {
+  .link-items .link-item {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+}
 .link-items .link-item a:hover {
   color: #24502C;
 }
