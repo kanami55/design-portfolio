@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontAwesomeの読み込み -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- splideの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
     <!-- cssの読み込み -->
     <link rel="stylesheet" href="./css/style.css">
     <title>DesignPortfolio</title>
 </head>
 <body>
-        <!-- header -->
-        <header>
-            <div class="header-inner">
-                <a href="index.html">
-                    <h1 class="header-log">KANAMI HIGASHIMOTO - Portfolio site
-                    </h1>
-                </a>
-                <div class="header-right">
+    <!-- header -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html">
+                <h1 class="header-log">KANAMI HIGASHIMOTO - Portfolio site
+                </h1>
+            </a>
+            <div class="header-right">
                     <nav class="header-nav">
                         <ul class="header-nav-items">
                             <li class="header-nav-item"><a href="/">ABOUT</a></li>
@@ -35,9 +37,9 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-
+            
         </header>
-    
+        
         
         <!-- mainVisual -->
         <div class="main-visual">
@@ -47,7 +49,7 @@
                 デザイナーをめざして
             </h2>
         </div>
-    
+        
         <!-- コンテンツ幅 -->
         <div class="content-inner">
             <!-- about -->
@@ -72,13 +74,13 @@
                 </div>
             </section>
         </div>
-    
-    
+        
+        
         <div class="between-img1">
             <img src="./image/laptop-g1977ce9b8_1920.jpg" alt="coffee-img">
         </div>
-    
-    
+        
+        
         <!-- コンテンツ幅 -->
         <div class="content-inner">
             <!-- works -->
@@ -117,24 +119,36 @@
                     </li>
                 </ul>
                 <h4 class="daily-ui-title">Daily UI</h4>
-                <ul class="works-items">
-                    <li class="works-item">
-                        <img src="./image/さくらまつり.png" alt="さくらまつり">
-                        <p class="img-title">バナー</p>
-                    </li>
-                    <li class="works-item">
-                        <img src="./image/デザイン３.png" alt="ひまわり">
-                        <p class="img-title">バナー</p>
-                    </li>
-                </ul>
+                <div id="main" class="splide">
+                    <div class="splide__track">
+                        <ul class="works-items splide__list">
+                            <li class="works-item splide__slide">
+                                <img src="./image/Daily UI #001 新規会員登録.png" alt="新規会員登録">
+                            </li>
+                            <li class="works-item splide__slide">
+                                <img src="./image/Daily UI #002 キャッシュカード決済.png" alt="キャッシュカード決済">
+                            </li>
+                            <li class="works-item splide__slide">
+                                <img src="./image/Daily UI #003 LP.png" alt="LP">
+                            </li>
+                            <li class="works-item splide__slide">
+                                <img src="./image/Daily UI #004 電卓アプリ.png" alt="電卓アプリ">
+                            </li>
+                            <li class="works-item splide__slide">
+                                <img src="./image/Daily UI #005 アイコン.png" alt="アイコン">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </section>
         </div>
-    
+        
         <div class="between-img1">
             <img src="./image/books-g425b2d135_1920.jpg" alt="coffee-img">
         </div>
-    
-    
+        
+        
         <!-- コンテンツ幅 -->
         <div class="content-inner">
             <!-- contact -->
@@ -182,18 +196,20 @@
                 </form> -->
             </section>
         </div>
-    
+        
         <!-- footer -->
         <footer>
             <p class="copy-light">©2022 KANAMI HIGASHIMOTO PORTFOLIO.</p>
         </footer>
-
+        
         <!-- Topへ戻るボタン -->
         <div class="page-top" id="page-top">
             <i class="fa-solid fa-caret-up scroll-btn-icon"></i>
         </div>
-
+        
+        
         <!-- javascriptの読み込み -->
         <script src="./js/style.js"></script>
+
 </body>
 </html>

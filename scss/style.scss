@@ -92,6 +92,10 @@ h3 {
     align-items: center;
     bottom: 40px;
     right: 40px;
+    @include m.mq(sm) {
+        bottom: 16px;
+        right: 16px;
+    }
     
     .scroll-btn-icon {
         font-size: 30px;
