@@ -246,6 +246,12 @@ header {
   top: 16px;
   right: 16px;
 }
+@media screen and (max-width: 600px) {
+  .hamburger-bar {
+    width: 25px;
+    height: 15px;
+  }
+}
 .hamburger-bar span {
   position: absolute;
   width: 100%;
@@ -266,14 +272,18 @@ header {
 .hamburger-nav-items {
   background-color: #FFF;
   position: fixed;
-  top: 65px;
-  width: 100%;
-  left: 0;
+  top: 0;
+  width: 40%;
+  right: 0;
+  z-index: -1;
   transform: translateX(100%);
 }
-.hamburger-nav-items .header-nav-item {
-  line-height: 400%;
+.hamburger-nav-items .hamburger-nav-item {
+  padding: 30px 0;
   text-align: center;
+}
+.hamburger-nav-items .hamburger-nav-item:nth-child(1) {
+  padding-top: 60px;
 }
 
 .action span:first-of-type {
