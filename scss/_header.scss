@@ -89,17 +89,27 @@ header {
 
 // ハンバーガーメニュー
 .hamburger-menu {
-    width: 40px;
+    display: none;
+    @include m.mq(md) {
+        display: block;
+    }
+}
+
+// bar部分
+.hamburger-bar {
+    width: 35px;
     height: 25px;
     position: relative;
     position: fixed;
-    top: 65px;
+    top: 16px;
+    right: 16px;
     
     span {
         position: absolute;
         width: 100%;
-        height: 1px;
-        background-color: #837F7F;
+        height: 1.5px;
+        background-color: #000;
+        border-radius: 2px;
     }
 
     span:first-of-type {
@@ -115,8 +125,39 @@ header {
     }
 }
 
+// 開いているときのコンテンツ部分
+.hamburger-nav-items {
+    background-color: #FFF;
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    left: 0;
+    transform: translateX(100%);
+    .header-nav-item {
+        line-height: 400%;
+        text-align: center;
+    }
+}
 
+// ハンバーガーメニュー開閉時追加
+.action {
+    span:first-of-type {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    
+    span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    span:last-of-type {
+        top: 50%;
+        transform: rotate(-45deg);
+    } 
+}
 
-
+.action-content {
+    transform: translateX(0);
+}
 
 

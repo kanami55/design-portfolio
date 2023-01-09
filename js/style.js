@@ -7,6 +7,11 @@ page_top.addEventListener("click", () => {
     });
   });
   
+// ハンバーグメニュー開閉時
+document.querySelector('.hamburger-bar').addEventListener('click', function() {
+  this.classList.toggle('action');
+  document.querySelector('.hamburger-nav-items').classList.toggle('action-content')
+})
 
 //Daily UIのスライド動作
 const target = ".splide";

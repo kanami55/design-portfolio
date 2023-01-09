@@ -20,7 +20,8 @@ html {
 
 body {
     font-size: 18px;
-    font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;;
+    font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+    overflow-x: hidden;
 
     @include m.mq(lg) {
         font-size: 16px;
@@ -47,8 +48,7 @@ li {
 
     @include m.mq(md) {
         width: 80%;
-    }
-    
+    }  
 }
 
 h3 {
