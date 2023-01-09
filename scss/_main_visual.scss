@@ -17,7 +17,7 @@
         left: 50%;
         margin: 0;
         padding: 0;
-        transform: translate(-150%,-50%);
+        transform: translate(-100%,-50%);
         @include m.mq(lg) {
             font-size: 40px;
             transform: translate(-100%,-50%);

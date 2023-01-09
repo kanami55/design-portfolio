@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontAwesomeの読み込み -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DesignPortfolio</title>
     <!-- splideの読み込み -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <!-- cssの読み込み -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>DesignPortfolio</title>
 </head>
 <body>
     <!-- header -->
@@ -21,21 +21,31 @@
                 </h1>
             </a>
             <div class="header-right">
-                    <nav class="header-nav">
-                        <ul class="header-nav-items">
-                            <li class="header-nav-item"><a href="/">ABOUT</a></li>
-                            <li class="header-nav-item"><a href="/">WORKS</a></li>
-                            <li class="header-nav-item"><a href="/">CONTACT</a></li>
-                        </ul>
+                <nav class="header-nav">
+                    <ul class="header-nav-items">
+                        <li class="header-nav-item"><a href="#about">ABOUT</a></li>
+                        <li class="header-nav-item"><a href="#works">WORKS</a></li>
+                        <li class="header-nav-item"><a href="#contact">CONTACT</a></li>
+                    </ul>
                     </nav>
                     <div class="sns-icon">
                         <i class="fa-brands fa-twitter"></i>
                     </div>
                 </div>
-                <!-- sp版 -->
-                <div class="navbar">
-                    <i class="fa-solid fa-bars"></i>
+                <!-- sp版ハンバーガーメニュー -->
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                    <ul class="header-nav-items">
+                        <li class="header-nav-item"><a href="#about">ABOUT</a>
+                        </li>
+                        <li class="header-nav-item"><a href="#works">WORKS</a>
+                        </li>
+                        <li class="header-nav-item"><a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
             </div>
             
         </header>
@@ -55,7 +65,7 @@
             <!-- about -->
             <section class="about">
                 <div class="about-left">
-                    <h3>ABOUT</h3>
+                    <h3 id="about">ABOUT</h3>
                     <div class="sp-about">
                         <img src="./image/cactus-gd4dd74ae1_1920.jpg" alt="about-image">
                     </div>
@@ -85,7 +95,7 @@
         <div class="content-inner">
             <!-- works -->
             <section class="works">
-                <h3>WORKS</h3>
+                <h3 id="works" class="works-title">WORKS</h3>
                 <ul class="works-items">
                     <li class="works-item">
                         <a href="banner-details.html">
@@ -118,24 +128,25 @@
                         <p class="img-title">ECサイト</p>
                     </li>
                 </ul>
+
                 <h4 class="daily-ui-title">Daily UI</h4>
-                <div id="main" class="splide">
+                <div class="splide">
                     <div class="splide__track">
-                        <ul class="works-items splide__list">
-                            <li class="works-item splide__slide">
-                                <img src="./image/Daily UI #001 新規会員登録.png" alt="新規会員登録">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="./image/daily-ui-001.png" alt="新規会員登録">
                             </li>
-                            <li class="works-item splide__slide">
-                                <img src="./image/Daily UI #002 キャッシュカード決済.png" alt="キャッシュカード決済">
+                            <li class="splide__slide">
+                                <img src="./image/daily-ui-002.png" alt="キャッシュカード決済">
                             </li>
-                            <li class="works-item splide__slide">
-                                <img src="./image/Daily UI #003 LP.png" alt="LP">
+                            <li class="splide__slide">
+                                <img src="./image/daily-ui-003.png" alt="LP">
                             </li>
-                            <li class="works-item splide__slide">
-                                <img src="./image/Daily UI #004 電卓アプリ.png" alt="電卓アプリ">
+                            <li class="splide__slide">
+                                <img src="./image/daily-ui-004.png" alt="電卓アプリ">
                             </li>
-                            <li class="works-item splide__slide">
-                                <img src="./image/Daily UI #005 アイコン.png" alt="アイコン">
+                            <li class="splide__slide">
+                                <img src="./image/daily-ui-005.png" alt="アイコン">
                             </li>
                         </ul>
                     </div>
@@ -153,7 +164,7 @@
         <div class="content-inner">
             <!-- contact -->
             <section class="contact">
-                <h3 class="contact-title">CONTACT</h3>
+                <h3 class="contact-title" id="contact">CONTACT</h3>
                 <p class="contact-subtext">お問い合わせはこちら</p>
                 <ul class="link-items">
                     <li class="link-item">
@@ -207,9 +218,12 @@
             <i class="fa-solid fa-caret-up scroll-btn-icon"></i>
         </div>
         
+        <!-- CDNの読み込み -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+        <!-- jsスライダーの初期化 -->
+        <!-- <script>new Splide( '.splide' ).mount();</script> -->
         
         <!-- javascriptの読み込み -->
         <script src="./js/style.js"></script>
-
 </body>
 </html>

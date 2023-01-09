@@ -5,9 +5,11 @@ page_top.addEventListener("click", () => {
         top: 0,
         behavior: "smooth"
     });
-});
+  });
+  
 
 //Daily UIのスライド動作
+const target = ".splide";
 const options = {
   mediaQuery: "min", 
   fixedWidth: "24rem",
@@ -31,7 +33,9 @@ const options = {
     },
   },
 };
+console.log(options);
 
-const splide = new Splide(".splide", options);
+// const mySplide = new Splide(target, options);
 
-splide.mount(window.splide.Extensions);
+// splide.mount(window.splide.Extensions);
+// mySplide.mount();
