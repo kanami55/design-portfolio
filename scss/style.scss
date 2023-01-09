@@ -16,7 +16,6 @@
 
 body {
     font-size: 18px;
-    // font-family: "Helvetica Neue","Segoe UI","Arial","Roboto","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
     font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;;
 
     @include m.mq(lg) {
@@ -46,10 +45,6 @@ li {
         width: 80%;
     }
     
-    // @include m.mq(sm) {
-    //     margin-left: 16px;
-    //     margin-right: 16px;
-    // }
 }
 
 h3 {
@@ -64,6 +59,7 @@ h3 {
     }
 }
 
+// 要素同士のimg
 .between-img1 {
     img {
         width: 100%;
@@ -83,3 +79,25 @@ h3 {
     }
 }
 
+// Topへ戻るボタン
+.page-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 3px 3px 3px #837F7F;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    right: 40px;
+    
+    .scroll-btn-icon {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        color: #24502C;
+        transform: translate(25%, 20%)
+    }
+}

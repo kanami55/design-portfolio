@@ -112,6 +112,9 @@
   padding-top: 12px;
   font-size: 24px;
 }
+.link-items .link-item a:hover {
+  color: #24502C;
+}
 .link-items li.link-item:nth-child(1) {
   padding-left: 0;
 }
@@ -204,6 +207,9 @@ header {
 }
 .header-nav-items .header-nav-item .header-nav-item:nth-child(1) {
   padding-left: 0;
+}
+.header-nav-items .header-nav-item a:hover {
+  color: #24502C;
 }
 
 .sns-icon {
@@ -410,4 +416,25 @@ h3 {
   .between-img1 img {
     height: 120px;
   }
+}
+
+.page-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 3px 3px 3px #837F7F;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  right: 40px;
+}
+.page-top .scroll-btn-icon {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  color: #24502C;
+  transform: translate(25%, 20%);
 }/*# sourceMappingURL=style.css.map */
