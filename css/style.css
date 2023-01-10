@@ -185,6 +185,7 @@ header {
 @media screen and (max-width: 600px) {
   .header-log {
     font-size: 16px;
+    z-index: -1;
   }
 }
 
@@ -243,6 +244,11 @@ header {
     display: block;
   }
 }
+@media screen and (max-width: 600px) {
+  .hamburger-menu {
+    z-index: 1;
+  }
+}
 
 .hamburger-bar {
   width: 35px;
@@ -287,6 +293,11 @@ header {
 .hamburger-nav-items .hamburger-nav-item {
   padding: 30px 0;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .hamburger-nav-items .hamburger-nav-item {
+    padding: 20px 0;
+  }
 }
 .hamburger-nav-items .hamburger-nav-item:nth-child(1) {
   padding-top: 60px;
@@ -424,9 +435,18 @@ header {
   }
 }
 
+.splide__slide {
+  width: 300px;
+  height: auto;
+}
 .splide__slide img {
   width: 300px;
   height: auto;
+}
+@media screen and (max-width: 600px) {
+  .splide__slide img {
+    width: 90%;
+  }
 }
 
 * {

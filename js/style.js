@@ -1,12 +1,13 @@
+
 // topへ戻るボタン動作
 const page_top = document.querySelector("#page-top")
 page_top.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
-  
+});
+
 // ハンバーグメニュー開閉時
 document.querySelector('.hamburger-bar').addEventListener('click', function() {
   this.classList.toggle('action');
@@ -14,10 +15,10 @@ document.querySelector('.hamburger-bar').addEventListener('click', function() {
 })
 
 //Daily UIのスライド動作
-const target = ".splide";
 const options = {
-  mediaQuery: "min", 
-  fixedWidth: "24rem",
+  mediaQuery: "max", 
+  fixedWidth: "300px",
+  fixedHeight: "250px",
   heightRatio: 0.3,
   gap: 16,
   type: "loop",
@@ -27,20 +28,19 @@ const options = {
   pagination: false,
 
   autoScroll: {
-    speed: 0.5, 
+    speed: 0.8, 
     pauseOnHover: false,
     pauseOnFocus: true,
   },
   breakpoints: {
     1025: {
-      gap: 24,
-      fixedWidth: "36rem",
+      mediaQuery: "min", 
+      // gap: 24,
+      // fixedWidth: "300px",
     },
   },
 };
-console.log(options);
 
-// const mySplide = new Splide(target, options);
+const splide = new Splide(".splide", options);
 
-// splide.mount(window.splide.Extensions);
-// mySplide.mount();
+splide.mount(window.splide.Extensions);

@@ -39,6 +39,7 @@ header {
 
     @include m.mq(sm) {
         font-size: 16px;
+        z-index: -1;
     }
 }
 
@@ -93,6 +94,9 @@ header {
     @include m.mq(md) {
         display: block;
     }
+    @include m.mq(sm) {
+        z-index: 1;
+    }
 }
 
 // bar部分
@@ -142,6 +146,10 @@ header {
     .hamburger-nav-item {
         padding: 30px 0;
         text-align: center;
+
+        @include m.mq(sm) {
+            padding: 20px 0;
+        }
     }
     .hamburger-nav-item:nth-child(1) {
         padding-top: 60px;
