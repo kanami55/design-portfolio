@@ -446,6 +446,42 @@ header {
   width: 300px;
 }
 
+.main-box {
+  display: flex;
+}
+
+.main-left {
+  width: 50%;
+}
+
+.lp-img-top img {
+  width: 300px;
+  height: auto;
+}
+
+.main-right {
+  width: 50%;
+  background: #FFBA29;
+}
+
+.main-right-inner {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.lp-img {
+  display: flex;
+}
+
+.ip-img-left img {
+  width: 150px;
+}
+
+.ip-img-right img {
+  width: 150px;
+}
+
 * {
   margin: 0;
   padding: 0;
