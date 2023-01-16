@@ -206,14 +206,14 @@ header {
   padding-left: 0;
 }
 .header-nav-items .header-nav-item a:hover {
-  color: #FFF;
+  color: #F6BBB3;
 }
 
 .sns-icon {
   margin-left: 60px;
 }
 .sns-icon .sns-icon a:hover {
-  color: #24502C;
+  color: #F6BBB3;
 }
 
 .navbar {
@@ -497,6 +497,7 @@ h3 {
   font-size: 48px;
   padding-top: 150px;
   margin-top: -150px;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 1000px) {
   h3 {
@@ -586,4 +587,8 @@ h3 {
 
 .detail-content {
   margin: 150px 0;
+}
+
+.figma-link {
+  padding-top: 80px;
 }/*# sourceMappingURL=style.css.map */

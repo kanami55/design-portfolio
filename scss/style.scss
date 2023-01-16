@@ -59,6 +59,7 @@ h3 {
     font-size: 48px;
     padding-top: 150px;
     margin-top: -150px;
+    padding-bottom: 40px;
     @include m.mq(md) {
         font-size: 32px;
     }
@@ -150,4 +151,8 @@ h3 {
 
 .detail-content {
     margin: 150px 0;
+}
+
+.figma-link {
+    padding-top: 80px;
 }
