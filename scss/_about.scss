@@ -2,11 +2,7 @@
 
 .about {
     display: flex;
-    margin: 200px 0;
-    
-    @include m.mq(lg) {
-        margin: 150px 0;
-    }
+    margin: 150px 0;
 
     @include m.mq(sm) {
         margin: 80px 0;

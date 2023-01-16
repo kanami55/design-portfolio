@@ -6,6 +6,9 @@
 @use "../scss/main_visual";
 @use "../scss/works";
 @use "../scss/lp";
+@use "../scss/_corporate.scss";
+@use "../scss/ec";
+@use "../scss/ui";
 @use "../scss/mixin" as m;
 
 
@@ -117,4 +120,34 @@ h3 {
     img {
         opacity: 30%;
     }
+}
+
+// それぞれの詳細ページの共通部分
+.img-top {
+    img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+.main-box {
+    display: flex;
+}
+
+.main-left {
+    width: 50%;
+}
+
+.main-right {
+    width: 50%;
+}
+
+.main-right-inner {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffff;
+}
+
+.detail-content {
+    margin: 150px 0;
 }

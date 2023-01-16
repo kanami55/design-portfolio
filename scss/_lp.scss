@@ -1,44 +1,5 @@
 @use "../scss/mixin" as m;
 
-.main-box {
-    display: flex;
-}
-
-.main-left {
-    width: 50%;
-}
-
-.lp-img-top {
-    img {
-        width: 300px;
-        height: auto;
-    }
-}
-
-.main-right {
-    width: 50%;
+.lp-main-right {
     background: #FFBA29;
-}
-
-.main-right-inner {
-    margin: 20px;
-    padding: 20px;
-    background-color: #ffff;
-}
-
-.lp-img {
-    display: flex;
-    // width: 100%;
-}
-
-.ip-img-left {
-    img {
-        width: 150px;
-    }
-}
-
-.ip-img-right {
-    img {
-        width: 150px;
-    }
 }
