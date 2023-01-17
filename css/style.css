@@ -431,6 +431,10 @@ header {
   width: 300px;
 }
 
+.daily-ui-link {
+  text-align: right;
+}
+
 .lp-main-right {
   background: #FFBA29;
 }
@@ -445,6 +449,26 @@ header {
 
 .ui-main-right {
   background: #00BFA6;
+}
+
+.uiux-img-flex {
+  display: flex;
+  width: 100%;
+}
+.uiux-img-flex .uiux-img-left {
+  width: 40%;
+}
+.uiux-img-flex .uiux-img-left img {
+  width: 100%;
+  height: auto;
+}
+.uiux-img-flex .uiux-img-right {
+  width: 40%;
+  margin-left: 10%;
+}
+.uiux-img-flex .uiux-img-right img {
+  width: 100%;
+  height: auto;
 }
 
 * {
