@@ -322,14 +322,27 @@ header {
     max-height: 400px;
   }
 }
-.main-visual h2 {
-  font-size: 28px;
+.main-visual .log {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0;
   padding: 0;
-  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -90%);
+}
+.main-visual .log img {
+  width: 100%;
+}
+.main-visual h2 {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, 20%);
 }
 @media screen and (max-width: 1280px) {
   .main-visual h2 {
@@ -572,7 +585,7 @@ h3 {
   font-size: 30px;
   width: 40px;
   height: 40px;
-  color: #F6BBB3;
+  color: #7BCFD7;
   transform: translate(25%, 20%);
 }
 
@@ -605,4 +618,14 @@ h3 {
 
 .figma-link {
   padding-top: 80px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+svg {
+  width: 100%;
+}
+
+.wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
