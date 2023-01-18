@@ -629,3 +629,27 @@ svg {
   top: 50%;
   left: 0;
 }
+
+#model1,
+#model2,
+#model3,
+#model4 {
+  background: #837F7F;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0 auto;
+  padding: 100px;
+  box-sizing: border-box;
+}
+#model1 .box,
+#model2 .box,
+#model3 .box,
+#model4 .box {
+  background: white;
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
