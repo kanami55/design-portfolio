@@ -27,6 +27,7 @@ header {
 }
 
 .header-log {
+    z-index: 2;
     font-size: 24px;
     
     @include m.mq(lg) {
@@ -39,7 +40,7 @@ header {
 
     @include m.mq(sm) {
         font-size: 16px;
-        z-index: -1;
+        
     }
 }
 

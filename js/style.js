@@ -46,7 +46,7 @@ const splide = new Splide(".splide", options);
 splide.mount(window.splide.Extensions);
 
 
-$('#wave1,#wave2,#wave3,#wave4,#wave5,#wave6').wavify({
+$('#wave1,#wave2,#wave3').wavify({
   height: 10,
   bones: 3,
   amplitude: 25,
@@ -54,8 +54,8 @@ $('#wave1,#wave2,#wave3,#wave4,#wave5,#wave6').wavify({
   speed: .25
 });
 
-$('#wave3').wavify({
-  height: 10,
+$('#wave').wavify({
+  height: 100,
   bones: 3,
   amplitude: 25,
   color: '#A3DDE0',

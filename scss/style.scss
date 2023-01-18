@@ -154,10 +154,11 @@ svg {
     width: 100%;
 }
 
-.wave {
-    position: absolute;
-    top: 50%;
-    left: 0;
+.wave1,
+.wave2 {
+    @include m.mq(sm) {
+        height: 100px;
+    }
 }
 
 #model1,
@@ -177,7 +178,6 @@ svg {
     
     .box {
         background: #ffff;
-        // padding: 20px;
         max-height: calc(100vh - 100px);
         overflow-y: scroll;
     }
