@@ -1,11 +1,11 @@
 @charset "UTF-8";
 .about {
   display: flex;
-  margin: 1000px 0 150px 0;
+  margin: 900px 0 150px 0;
 }
 @media screen and (max-width: 600px) {
   .about {
-    margin: 80px 0;
+    margin: 540px 0 80px 0;
     display: block;
   }
 }
@@ -16,7 +16,6 @@
 @media screen and (max-width: 600px) {
   .sp-about {
     display: block;
-    margin: 40px auto 0 auto;
   }
 }
 @media screen and (max-width: 600px) {
@@ -71,48 +70,6 @@
 
 .skill-details {
   padding-top: 12px;
-}
-
-.contact {
-  margin: 150px 0;
-}
-@media screen and (max-width: 600px) {
-  .contact {
-    margin: 80px 0;
-  }
-}
-
-.contact-title,
-.contact-subtext {
-  text-align: center;
-}
-
-.link-items {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-@media screen and (max-width: 600px) {
-  .link-items {
-    margin: 40px 0;
-  }
-}
-.link-items .link-item {
-  padding-left: 40px;
-  padding-top: 12px;
-  font-size: 24px;
-}
-@media screen and (max-width: 600px) {
-  .link-items .link-item {
-    font-size: 18px;
-    padding-left: 20px;
-  }
-}
-.link-items .link-item a:hover {
-  color: #A3DDE0;
-}
-.link-items li.link-item:nth-child(1) {
-  padding-left: 0;
 }
 
 .copy-light {
@@ -332,6 +289,13 @@ header {
   transform: translateX(-50%);
   z-index: 1;
 }
+@media screen and (max-width: 600px) {
+  .main-visual .log {
+    top: 15%;
+    width: 300px;
+    height: 300px;
+  }
+}
 .main-visual .log img {
   z-index: 1;
   width: 100%;
@@ -367,13 +331,19 @@ header {
 .main-visual-wave {
   width: 100%;
   position: absolute;
-  max-height: 540px;
+  max-height: 500px;
   height: 100%;
   top: 30%;
   left: 0;
   z-index: -2;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .main-visual-wave {
+    top: 10%;
+    max-height: 380px;
+  }
 }
 
 .works {
@@ -426,7 +396,7 @@ header {
     margin-top: 0;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
   .works-items li.works-item:nth-child(3) {
     margin-top: 80px;
   }
@@ -468,9 +438,185 @@ header {
 .model-box-inner {
   margin: 50px;
 }
+@media screen and (max-width: 1280px) {
+  .model-box-inner {
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .model-box-inner {
+    margin: 20px;
+  }
+}
+
+.img-top img {
+  width: 300px;
+  height: auto;
+}
+@media screen and (max-width: 1000px) {
+  .img-top img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .img-top img {
+    width: 100%;
+  }
+}
+
+.main-box {
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .main-box {
+    display: block;
+  }
+}
+
+.main-left {
+  width: 50%;
+  height: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .main-left {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .figma-detail {
+    text-align: center;
+  }
+}
+
+.figma-site {
+  width: 500px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+  .figma-site {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .figma-site {
+    height: auto;
+  }
+}
+
+.main-right {
+  width: 50%;
+  height: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .main-right {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+.main-right-inner {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+}
+@media screen and (max-width: 600px) {
+  .main-right-inner {
+    margin: 10px;
+    padding: 10px;
+  }
+}
+
+.detail-content {
+  margin: 150px 0;
+}
+
+.figma-link {
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .figma-link-items {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  .figma-link-items {
+    display: block;
+  }
+}
+.figma-link-items .figma-link-item {
+  width: 45%;
+}
+@media screen and (max-width: 600px) {
+  .figma-link-items .figma-link-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .figma-link-items .figma-link-item:nth-child(2) {
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .figma-link-items .figma-link-item:nth-child(2) {
+    margin-left: 0px;
+  }
+}
 
 .figma-link-text {
   padding-top: 20px;
+}
+
+#model1,
+#model2,
+#model3,
+#model4 {
+  background: #837F7F;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  #model1,
+#model2,
+#model3,
+#model4 {
+    padding: 30px;
+  }
+}
+#model1 .box,
+#model2 .box,
+#model3 .box,
+#model4 .box {
+  background: white;
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+h4 {
+  padding-top: 30px;
+}
+
+h4:nth-child(1) {
+  padding-top: 0px;
+}
+
+h5 {
+  padding-top: 15px;
+}
+
+.concept-text {
+  padding-left: 1em;
+  text-indent: -1em;
 }
 
 .lp-main-right {
@@ -503,6 +649,48 @@ header {
 }
 .uiux-img-flex img:nth-child(3) {
   margin-left: 10px;
+}
+
+.contact {
+  margin: 150px 0;
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    margin: 80px 0;
+  }
+}
+
+.contact-title,
+.contact-subtext {
+  text-align: center;
+}
+
+.link-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .link-items {
+    margin: 40px 0;
+  }
+}
+.link-items .link-item {
+  padding-left: 40px;
+  padding-top: 12px;
+  font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+  .link-items .link-item {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+}
+.link-items .link-item a:hover {
+  color: #A3DDE0;
+}
+.link-items li.link-item:nth-child(1) {
+  padding-left: 0;
 }
 
 * {
@@ -566,7 +754,7 @@ h3 {
 }
 @media screen and (max-width: 600px) {
   h3 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
 }
@@ -612,39 +800,6 @@ h3 {
   transform: translate(25%, 20%);
 }
 
-.img-top img {
-  width: 300px;
-  height: auto;
-}
-
-.main-box {
-  display: flex;
-}
-
-.main-left {
-  width: 50%;
-  height: 100%;
-}
-
-.main-right {
-  width: 50%;
-  height: 100%;
-}
-
-.main-right-inner {
-  margin: 20px;
-  padding: 20px;
-  background-color: white;
-}
-
-.detail-content {
-  margin: 150px 0;
-}
-
-.figma-link {
-  padding-top: 40px;
-}
-
 svg {
   width: 100%;
 }
@@ -654,28 +809,4 @@ svg {
 #wave2 {
     height: 100px;
   }
-}
-
-#model1,
-#model2,
-#model3,
-#model4 {
-  background: #837F7F;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: none;
-  margin: 0 auto;
-  padding: 50px;
-  box-sizing: border-box;
-}
-#model1 .box,
-#model2 .box,
-#model3 .box,
-#model4 .box {
-  background: white;
-  max-height: calc(100vh - 100px);
-  overflow-y: scroll;
 }/*# sourceMappingURL=style.css.map */

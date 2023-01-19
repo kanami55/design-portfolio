@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @use "../scss/about";
-@use "../scss/contact";
 @use "../scss/footer";
 @use "../scss/header";
 @use "../scss/main_visual";
 @use "../scss/works";
 @use "../scss/model";
+@use "../scss/contact";
 @use "../scss/mixin" as m;
 
 
@@ -63,7 +63,7 @@ h3 {
     }
 
     @include m.mq(sm) {
-        font-size: 32px;
+        font-size: 24px;
         text-align: center;
     }
 }
@@ -114,42 +114,7 @@ h3 {
     }
 }
 
-// それぞれの詳細ページの共通部分
-.img-top {
-    img {
-        width: 300px;
-        height: auto;
-    }
-}
-
-.main-box {
-    display: flex;
-}
-
-.main-left {
-    width: 50%;
-    height: 100%;
-}
-
-.main-right {
-    width: 50%;
-    height: 100%;
-}
-
-.main-right-inner {
-    margin: 20px;
-    padding: 20px;
-    background-color: #ffff;
-}
-
-.detail-content {
-    margin: 150px 0;
-}
-
-.figma-link {
-    padding-top: 40px;
-}
-
+// コンテンツ間の波
 svg {
     width: 100%;
 }
@@ -161,24 +126,3 @@ svg {
     }
 }
 
-#model1,
-#model2,
-#model3,
-#model4 {
-    background: #837F7F;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: none;
-    margin: 0 auto;
-    padding: 50px;
-    box-sizing: border-box;
-    
-    .box {
-        background: #ffff;
-        max-height: calc(100vh - 100px);
-        overflow-y: scroll;
-    }
-}

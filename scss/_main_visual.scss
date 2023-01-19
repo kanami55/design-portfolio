@@ -20,6 +20,11 @@
         height: 500px;
         transform: translateX(-50%);
         z-index: 1;
+        @include m.mq(sm) {
+            top: 15%;
+            width: 300px;
+            height: 300px;
+        }
         img {
             z-index: 1;
             width: 100%;
@@ -52,12 +57,15 @@
 .main-visual-wave {
     width: 100%;
     position: absolute;
-    max-height: 540px;
+    max-height: 500px;
     height: 100%;
     top: 30%;
     left: 0;
     z-index: -2;
     padding: 0;
     margin: 0;
-    // transform: translateY(-10%);
+    @include m.mq(sm) {
+        top: 10%;
+        max-height: 380px;
+    }
 }

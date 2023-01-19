@@ -3,11 +3,162 @@
 // 共通部分
 .model-box-inner {
     margin: 50px;
+    @include m.mq(lg) {
+        margin: 30px;
+    }
+    @include m.mq(md) {
+        margin: 20px;
+    }
+}
+
+.img-top {
+    img {
+        width: 300px;
+        height: auto;
+
+        @include m.mq(md) {
+            width: 50%;
+        }
+        @include m.mq(sm) {
+            width: 100%;
+        }
+    }
+}
+
+.main-box {
+    display: flex;
+    @include m.mq(md) {
+        display: block;
+    }
+}
+
+.main-left {
+    width: 50%;
+    height: 100%;
+    @include m.mq(md) {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.figma-detail {
+    @include m.mq(sm) {
+        text-align: center;
+    }
+}
+
+.figma-site {
+    width: 500px;
+    height: 300px;
+    @include m.mq(md) {
+        width: 100%;
+        height: 200px;
+    }
+
+    @include m.mq(sm) {
+        height: auto;
+    }
+}
+
+.main-right {
+    width: 50%;
+    height: 100%;
+    @include m.mq(md) {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.main-right-inner {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffff;
+    @include m.mq(sm) {
+       margin: 10px;
+       padding: 10px;
+    }
+}
+
+.detail-content {
+    margin: 150px 0;
+}
+
+.figma-link {
+    padding-top: 40px;
+}
+
+.figma-link-items {
+    @include m.mq(md) {
+        display: flex;
+    }
+
+    @include m.mq(sm) {
+        display: block;
+    }
+
+    .figma-link-item {
+        width: 45%;
+        @include m.mq(sm) {
+            width: 100%;
+        }
+    }
+
+    .figma-link-item:nth-child(2) {
+        @include m.mq(md) {
+            margin-left: 10%;
+        }
+        @include m.mq(sm) {
+            margin-left: 0px;
+        }
+    }
 }
 
 .figma-link-text {
     padding-top: 20px;
 }
+
+#model1,
+#model2,
+#model3,
+#model4 {
+    background: #837F7F;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+    @include m.mq(md) {
+        padding: 30px;
+    }
+    
+    .box {
+        background: #ffff;
+        max-height: calc(100vh - 100px);
+        overflow-y: scroll;
+    }
+}
+
+h4 {
+    padding-top: 30px;
+}
+
+h4:nth-child(1) {
+    padding-top: 0px;
+}
+
+h5 {
+    padding-top: 15px;
+}
+
+.concept-text {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
 
 // LP
 .lp-main-right {

@@ -48,11 +48,8 @@
         }
      }
 
-     li.works-item:nth-child(2) {
-     }
-
      li.works-item:nth-child(3) {
-        @include m.mq(md) {
+        @include m.mq(lg) {
             margin-top: 80px;
        }
     }
@@ -97,3 +94,5 @@
 .daily-ui-link {
     text-align: right;
 }
+
+
