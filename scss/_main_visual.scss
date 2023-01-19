@@ -1,7 +1,6 @@
 @use "../scss/mixin" as m;
 
 .main-visual {
-    position: relative;
     z-index: 1;
     img {
         width: 100%;
@@ -13,13 +12,13 @@
 
     .log {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         margin: 0;
         padding: 0;
-        width: 300px;
-        height: 300px;
-        transform: translate(-50%, 40%);
+        width: 500px;
+        height: 500px;
+        transform: translateX(-50%);
         z-index: 1;
         img {
             z-index: 1;
@@ -50,13 +49,15 @@
     }
 }
 
-#wave {
+.main-visual-wave {
+    width: 100%;
     position: absolute;
-    max-height: 640px;
-    top: 50%;
+    max-height: 540px;
+    height: 100%;
+    top: 30%;
     left: 0;
     z-index: -2;
     padding: 0;
     margin: 0;
-    transform: translateY(-10%);
+    // transform: translateY(-10%);
 }

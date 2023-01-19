@@ -1,0 +1,46 @@
+@use "../scss/mixin" as m;
+
+// 共通部分
+.model-box-inner {
+    margin: 50px;
+}
+
+.figma-link-text {
+    padding-top: 20px;
+}
+
+// LP
+.lp-main-right {
+    background: #FFBA29;
+}
+
+// コーポレートサイト
+.corporate-main-right {
+    background: #9DD3A8;
+}
+
+// EC
+.ec-main-right {
+    background: #E6B422;
+}
+
+// UIUX
+.ui-main-right {
+    background: #00BFA6;
+}
+
+.uiux-img-flex {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+        img {
+            width: 20%;
+            height: auto;
+        }
+        img:nth-child(2) {
+            margin-left: 10px;
+        }
+        img:nth-child(3) {
+            margin-left: 10px;
+        }
+}

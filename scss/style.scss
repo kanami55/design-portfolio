@@ -5,10 +5,7 @@
 @use "../scss/header";
 @use "../scss/main_visual";
 @use "../scss/works";
-@use "../scss/lp";
-@use "../scss/_corporate.scss";
-@use "../scss/ec";
-@use "../scss/ui";
+@use "../scss/model";
 @use "../scss/mixin" as m;
 
 
@@ -26,11 +23,12 @@ body {
     font-size: 18px;
     font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
     overflow-x: hidden;
+    line-height: 27px;
 
     @include m.mq(lg) {
         font-size: 16px;
+        line-height: 24px;
     }
-
 }
 
 a {
@@ -130,10 +128,12 @@ h3 {
 
 .main-left {
     width: 50%;
+    height: 100%;
 }
 
 .main-right {
     width: 50%;
+    height: 100%;
 }
 
 .main-right-inner {
@@ -147,15 +147,15 @@ h3 {
 }
 
 .figma-link {
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 svg {
     width: 100%;
 }
 
-.wave1,
-.wave2 {
+#wave1,
+#wave2 {
     @include m.mq(sm) {
         height: 100px;
     }
@@ -173,7 +173,7 @@ svg {
     left: 0;
     display: none;
     margin: 0 auto;
-    padding: 100px;
+    padding: 50px;
     box-sizing: border-box;
     
     .box {

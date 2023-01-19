@@ -15,7 +15,7 @@
 .link-items {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
     @include m.mq(sm) {
         margin: 40px 0;
     }
@@ -32,7 +32,7 @@
     }
 
     .link-item a:hover {
-        color: #F6BBB3;
+        color: #A3DDE0;
 
     }
 

@@ -35,8 +35,6 @@ const options = {
   breakpoints: {
     1025: {
       mediaQuery: "min", 
-      // gap: 24,
-      // fixedWidth: "300px",
     },
   },
 };
@@ -56,7 +54,7 @@ $('#wave1,#wave2,#wave3').wavify({
 
 $('#wave').wavify({
   height: 100,
-  bones: 3,
+  bones: 5,
   amplitude: 25,
   color: '#A3DDE0',
   speed: .25
