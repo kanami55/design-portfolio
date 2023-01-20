@@ -72,18 +72,34 @@
   padding-top: 12px;
 }
 
-.copy-light {
+footer {
+  margin: 0 auto;
+  width: 100%;
+  vertical-align: bottom;
+}
+footer img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+footer .footer-design {
+  position: relative;
+  text-align: center;
+}
+footer .copy-light {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translatex(-50%);
   text-align: center;
   font-size: 16px;
-  padding: 40px 0;
 }
 @media screen and (max-width: 1280px) {
-  .copy-light {
+  footer .copy-light {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .copy-light {
+  footer .copy-light {
     font-size: 12px;
   }
 }
@@ -704,6 +720,7 @@ html {
 }
 
 body {
+  color: #333333;
   font-size: 18px;
   font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
   overflow-x: hidden;
@@ -718,7 +735,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #333333;
 }
 
 ul,
@@ -774,23 +791,24 @@ h3 {
 }
 
 .page-top {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 3px 3px 3px #837F7F;
+  width: 100px;
+  height: 100px;
   position: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
 }
 @media screen and (max-width: 600px) {
   .page-top {
+    width: 40px;
+    height: 40px;
     bottom: 16px;
     right: 16px;
   }
+}
+.page-top .img {
+  width: 100%;
+  height: auto;
 }
 .page-top .scroll-btn-icon {
   font-size: 30px;

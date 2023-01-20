@@ -20,6 +20,7 @@ html {
 }
 
 body {
+    color: #333333;
     font-size: 18px;
     font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
     overflow-x: hidden;
@@ -33,7 +34,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #333333;
 }
 
 ul,
@@ -89,20 +90,22 @@ h3 {
 
 // Topへ戻るボタン
 .page-top {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: 3px 3px 3px #837F7F;
+    width: 100px;
+    height: 100px;
     position: fixed;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     @include m.mq(sm) {
+        width: 40px;
+        height: 40px;
         bottom: 16px;
         right: 16px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
     }
     
     .scroll-btn-icon {

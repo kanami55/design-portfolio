@@ -1,15 +1,38 @@
 @use "../scss/mixin" as m;
 
-.copy-light {
-    text-align: center;
-    font-size: 16px;
-    padding: 40px 0;
-
-    @include m.mq(lg) {
-        font-size: 14px;
+footer {
+    // background-image: url(../image/fish.png);
+    // background-repeat: no-repeat;
+    // background-size: 50%;
+    // background-position: center;
+    // height: 200px;
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: bottom;
+    img {
+        max-width: 100%;
+        vertical-align: bottom;
     }
 
-    @include m.mq(md) {
-        font-size: 12px;
+    .footer-design {
+        position: relative;
+        text-align: center;
+    }
+
+    .copy-light {
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        transform: translatex(-50%);
+        text-align: center;
+        font-size: 16px;
+    
+        @include m.mq(lg) {
+            font-size: 14px;
+        }
+    
+        @include m.mq(md) {
+            font-size: 12px;
+        }
     }
 }
