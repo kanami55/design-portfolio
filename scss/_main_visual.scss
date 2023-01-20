@@ -19,7 +19,7 @@
         width: 500px;
         height: 500px;
         transform: translateX(-50%);
-        z-index: 1;
+        z-index: -1;
         @include m.mq(sm) {
             top: 15%;
             width: 300px;

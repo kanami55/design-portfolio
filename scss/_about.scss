@@ -14,10 +14,11 @@
     display: none;
     @include m.mq(sm) {
         display: block;
+        text-align: center;
     }
     img {
         @include m.mq(sm) {
-            width: 100%;
+            width: 50%;
         }
     }
     
@@ -34,15 +35,19 @@
     @include m.mq(sm) {
         text-align: center;
         padding-top: 12px;
-
     }
 }
 
 .about-right {
     width: 50%;
-    text-align: right;
+    text-align: center;
     img {
-        width: 90%;
+        width: 50%;
+        border-radius: 10px;
+
+        @include m.mq(md) {
+           width: 60%; 
+        }
     }
     @include m.mq(sm) {
         display: none;

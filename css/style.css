@@ -16,11 +16,12 @@
 @media screen and (max-width: 600px) {
   .sp-about {
     display: block;
+    text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
   .sp-about img {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -42,10 +43,16 @@
 
 .about-right {
   width: 50%;
-  text-align: right;
+  text-align: center;
 }
 .about-right img {
-  width: 90%;
+  width: 50%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .about-right img {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 600px) {
   .about-right {
@@ -303,7 +310,7 @@ header {
   width: 500px;
   height: 500px;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: -1;
 }
 @media screen and (max-width: 600px) {
   .main-visual .log {
@@ -797,6 +804,12 @@ h3 {
   display: flex;
   bottom: 20px;
   right: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .page-top {
+    width: 80px;
+    height: 80px;
+  }
 }
 @media screen and (max-width: 600px) {
   .page-top {

@@ -96,6 +96,10 @@ h3 {
     display: flex;
     bottom: 20px;
     right: 20px;
+    @include m.mq(md) {
+        width: 80px;
+        height: 80px;
+    }
     @include m.mq(sm) {
         width: 40px;
         height: 40px;
