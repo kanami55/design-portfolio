@@ -1,4 +1,3 @@
-
 // topへ戻るボタン動作
 const page_top = document.querySelector("#page-top")
 page_top.addEventListener("click", () => {
@@ -8,11 +7,13 @@ page_top.addEventListener("click", () => {
   });
 });
 
-// ハンバーガーメニュー開閉時
+
+// ハンバーガーメニュー開閉の動作
 document.querySelector('.hamburger-bar').addEventListener('click', function() {
   this.classList.toggle('action');
   document.querySelector('.hamburger-nav-items').classList.toggle('action-content')
-})
+});
+
 
 //Daily UIのスライド動作
 const options = {
@@ -44,6 +45,7 @@ const splide = new Splide(".splide", options);
 splide.mount(window.splide.Extensions);
 
 
+// 波の動作
 $('#wave1,#wave2,#wave3').wavify({
   height: 10,
   bones: 3,
@@ -61,7 +63,7 @@ $('#wave').wavify({
 });
 
 
-// モーダル
+// モーダルの開閉動作
 // LP
 $(function() {
   $('#model-open1').on('click',function() {
@@ -72,8 +74,9 @@ $(function() {
   $('#model1').on('click',function(){
     $('#model1').hide();
     $('body').css('overflow-y', 'auto');
-  })
-})
+  });
+});
+
 // コーポレートサイト
 $(function() {
   $('#model-open2').on('click',function() {
@@ -84,8 +87,9 @@ $(function() {
   $('#model2').on('click',function(){
     $('#model2').hide();
     $('body').css('overflow-y', 'auto');
-  })
-})
+  });
+});
+
 // ECサイト
 $(function() {
   $('#model-open3').on('click',function() {
@@ -96,8 +100,9 @@ $(function() {
   $('#model3').on('click',function(){
     $('#model3').hide();
     $('body').css('overflow-y', 'auto');
-  })
-})
+  });
+});
+
 // UIUX
 $(function() {
   $('#model-open4').on('click',function() {
@@ -108,5 +113,5 @@ $(function() {
   $('#model4').on('click',function(){
     $('#model4').hide();
     $('body').css('overflow-y', 'auto');
-  })
-})
+  });
+});
